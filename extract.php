@@ -27,11 +27,11 @@ function fetchUvData() {
         curl_close($ch);
     };
 
+    return $response;
+
     // echo "<pre>";
     // print_r($response);
     // echo "</pre>";
-
-    return $response;
 
     //  // Initialisiert eine cURL-Sitzung
     // $ch = curl_init($url);
@@ -45,16 +45,12 @@ function fetchUvData() {
 
     // Schließt die cURL-Sitzung
     // curl_close($ch);
-    
 
     // Dekodiert die JSON-Antwort und gibt Daten zurück
     // return json_decode($response, true);
     // print_r($response);
 }
 
-// echo "<pre>"; 
-// print_r(fetchUvData());
-// echo "</pre>";
 
 return fetchUvData();
 ?>
