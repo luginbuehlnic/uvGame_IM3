@@ -1,17 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Testsite</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='styles/style.css'>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Testsite</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='styles/style.css'>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        </head>
+
 <body>
+    <header class="main-header">
+        <h1>Guess the Location</h1>
+    </header>
+
+    <div class="Pergament">
+        <h2>How to play:</h2>
+
+        <p class="clues">You will be given <b>three clues</b>: a <b>date</b>, a <b>time</b> and a <b>UV-index</b>. Your mission: 
+            figure out which <b>landmark</b> has those conditions!</p>
+
+        <ol class="steps">
+            <li>Look at the clues</li>
+            <li>Pick the landmark you think is right</li>
+            <li>Hit <b>"Guess"</b> to lock it in</li>
+        </ol>
+
+        <p class="start-text">Press <b>"Start"</b> and let the guessing adventure begin!</p>
+
+        <button class="start-button">Start</button>
+    </div>
+
     <canvas id="uviChart"></canvas>
     <script src='scripts/script.js'></script>
-    <h1>Testsite</h1>
-    <p>Dies ist eine Testseite.</p>
+    <!--<h1>Testsite</h1>
+    <p>Dies ist eine Testseite.</p>-->
 </body>
 </html>
