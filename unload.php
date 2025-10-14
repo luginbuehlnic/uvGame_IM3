@@ -4,11 +4,15 @@ require_once 'config.php';
 
 header('Content-Type: application/json');
 
-if (isset($_GET['datetime'])) {
-    $datetime = $_GET['datetime'];
-} else {
-    $datetime = '2025-10-07 11:00:00';
-}
+$selected = $_GET['selected'] ?? '';
+$correct = $_GET['correct'] ?? '';
+$timestamp = $_GET['timestamp'] ?? '';
+
+// if (isset($_GET['datetime'])) {
+//     $datetime = $_GET['datetime'];
+// } else {
+//     $datetime = '2025-10-07 11:00:00';
+// }
 
 if (empty($datetime)) {
     echo json_encode(['error' => 'Datetime parameter is required.']);

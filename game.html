@@ -24,17 +24,31 @@
         <div class="conditions-list">
             <p>
                 <span class="condition-label">Date:</span>
-                <span class="condition-value">25.09.2025</span>
+                <span class="condition-value" id="IdDate"></span>
             </p>
             <p>
                 <span class="condition-label">Time:</span>
-                <span class="condition-value">12:00</span>
+                <span class="condition-value" id="IdTime"></span>
             </p>
             <p>
                 <span class="condition-label">UVI:</span>
-                <span class="condition-value">3.1</span>
+                <span class="condition-value" id="IdUVI"></span>
             </p>
         </div>
-        
+        <div id="locations-container">
+            <button class="location-btn" data-location="Valais, Switzerland">Valais, Switzerland</button>
+            <button class="location-btn" data-location="Berlin, Germany">Berlin, Germany</button>
+            <button class="location-btn" data-location="London, England">London, England</button>
+            <button class="location-btn" data-location="Barcelona, Spain">Barcelona, Spain</button>
+            <button class="location-btn" data-location="Stonehenge, England">Stonehenge, England</button>
+            <button class="location-btn" data-location="Rome, Italy">Rome, Italy</button>
+            <button class="location-btn" data-location="Acropolis, Greece">Acropolis, Greece</button>
+            <button class="location-btn" data-location="Paris, France">Paris, France</button>
+            <button class="location-btn" data-location="Budapest, Hungary">Budapest, Hungary</button>
+            <button class="location-btn" data-location="Copenhagen, Denmark">Copenhagen, Denmark</button>
+        </div>
+        <button id="guessButton" disabled=>Guess</button>
+        <p id="result"></p>
+        <script src='scripts/loadData.js'></script>
     </body>
 

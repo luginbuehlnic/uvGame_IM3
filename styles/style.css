@@ -183,3 +183,39 @@ ol {
     color: black;
     text-align: right;
 }
+
+.location-btn {
+  margin: 4px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.location-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.location-btn.selected {
+  background-color: #93C5FD; /* helles Blau */
+  border-color: #3B82F6;
+  color: white;
+}
+
+#guessButton {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: #9CA3AF; /* inaktiv: grau */
+  color: white;
+  cursor: not-allowed;
+  transition: background 0.2s;
+}
+
+#guessButton.enabled {
+  background-color: #3B82F6;
+  cursor: pointer;
+}
