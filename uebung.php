@@ -20,40 +20,40 @@ if ($note >= 4) {
 }
 
 // array -> console log
-echo "<br>";
-echo "ARRAYS & Print";
-$fruits = ['Banane', 'Apfel', 'Birne'];
+// echo "<br>";
+// echo "ARRAYS & Print";
+// $fruits = ['Banane', 'Apfel', 'Birne'];
 
-print_r($fruits);
-echo "<br>";
+// print_r($fruits);
+// echo "<br>";
 
-echo "<pre>";
-print_r($fruits);
-echo "<br>";
+// echo "<pre>";
+// print_r($fruits);
+// echo "<br>";
 
-echo "<pre>";
-print_r($fruits[2]);
-echo "<br>";
+// echo "<pre>";
+// print_r($fruits[2]);
+// echo "<br>";
 
-echo $fruits[1];
-echo "<br>";
+// echo $fruits[1];
+// echo "<br>";
 
-//loops
-echo "<br>";
-echo "LOOPS";
-echo "<br>";
+// //loops
+// echo "<br>";
+// echo "LOOPS";
+// echo "<br>";
 
 foreach ($fruits as $item) {
-    echo $item . "<br>";
+    // echo $item . "<br>";
 }
 
 
 // associative arrays / objekte
-echo "<br>";
-echo "<br>";
-echo "associative arrays";
-echo "<br>";
-echo "<br>";
+// echo "<br>";
+// echo "<br>";
+// echo "associative arrays";
+// echo "<br>";
+// echo "<br>";
 
 $standorte = [
     'Chur' => 15.4,
@@ -61,13 +61,13 @@ $standorte = [
     'Bern' => 18.5
 ];
 
-echo "<pre>";
-print_r($standorte);
-echo "<br>";
+// echo "<pre>";
+// print_r($standorte);
+// echo "<br>";
 
-echo $standorte['Zürich'];
-echo "<br>";
+// echo $standorte['Zürich'];
+// echo "<br>";
 
 foreach ($standorte as $ort => $temperatur) {
-    echo $ort . " " . $temperatur . "<br>";
+    // echo $ort . " " . $temperatur . "<br>";
 };

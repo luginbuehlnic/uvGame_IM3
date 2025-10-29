@@ -10,6 +10,8 @@
         </head>
 
     <body>
+        
+        <script src="scripts/result.js"></script>
         <header class="main-header">
             <div class="header">
                 <h1>Guess the Location</h1>
@@ -18,11 +20,13 @@
         </header>
 
         <div class="congratulations-box">
-            Congratulations, your guess is correct!
+             <p id="resultText"></p><!--Congratulations, your guess is correct!-->
         </div>
-
+        <p id="searchedLocationText" class="centered-text"></p>
         <p class="centered-text">Below you can see the UV-index of the other landmarks at this date and time:</p>
-
+        <div class="chart-container">
+            <canvas id="uviChart"></canvas>
+        </div>
         <div class="button-wrapper"> 
             <a href="game.html" class="play-again-button">
                 Play again
