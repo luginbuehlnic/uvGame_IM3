@@ -1,7 +1,7 @@
 body {
     background-color: #E9D8C8; 
     display: block;
-    overflow: hidden;
+    overflow: auto;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -196,44 +196,57 @@ ol {
 
 #location-container{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 20px;
-    max-width: 900px;
-    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 24px;
+    max-width: 1250px;
+    margin: 10px auto;
+    justify-items: center;
+    align-items: center;
+    /* padding: 10px; */
 }
 
-
-
 .location-btn {
-    background-color: #f4ebdd;
-    border: 2px solid #2d2d2d;
+    background-color: transparent;
+    border: 0px solid transparent;
     border-radius: 12px;
-    padding: 12px 10px;
+    padding: 12px;
+    width: 140px;
+    text-align: center;
     cursor: pointer;
     font-weight: bold;
-    transition: all 0.2s ease;
-    box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    color: #333;
+    transition: all 0.25s ease;
+}
 
-  /* margin: 4px;
-  padding: 8px 12px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  background-color: #f5f5f5;
-  cursor: pointer;
-  transition: background 0.2s; */
+.location-btn:nth-child(odd) {
+    transform: translateY(-1.5px);
+}
+.location-btn:nth-child(even) {
+    transform: translateY(1.5px);
+}
+
+.location-btn img.location-img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
 }
 
 .location-btn:hover {
-    background-color: #e5d8c5;
-    transform: translateY(-2px);
-
-  /* background-color: #e0e0e0; */
+    transform: translateY(-3px);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
 .location-btn.selected {
-  background-color: #93C5FD; /* helles Blau */
-  border-color: #3B82F6;
-  color: white;
+  background-color: #C4CBBA;
+  /* border-color: #3B82F6; */
+  /* color: white; */
+  transform: translateY(-3px);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.location-btn img.location-img.selected {
+    transform: scale(1.5);
 }
 
 #guessButton {
@@ -246,6 +259,7 @@ ol {
     font-size: 1em;
     box-shadow: 0 3px 0 #7b5e47; 
     margin-top: 20px;
+    margin-bottom: 20px;
     text-decoration: none; 
     display: inline-block; 
     text-align: center;

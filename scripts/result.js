@@ -41,18 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 datasets: [{
                     label: "UV Index",
                     data: data.map(item => item.uvi),
-                    backgroundColor: [
-                    "#6B7280",
-                    "#93C5FD",
-                    "#A7F3D0",
-                    "#FDE68A",
-                    "#FCA5A5", 
-                    "#C4B5FD",
-                    "#F9A8D4",
-                    "#FDBA74",
-                    "#86EFAC",
-                    "#BFDBFE"
-                    ]
+                    backgroundColor: "#B07AA1CC"
                 }]
             };      
 

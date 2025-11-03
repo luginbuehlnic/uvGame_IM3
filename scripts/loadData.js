@@ -46,13 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
         
         
         guessButton.addEventListener("click", () => {
-        if (selectedLocation === searchedLocation) {
-            result.textContent = `Richtig! ${searchedLocation} war korrekt.`;
-            result.style.color = "green";
-        } else {
-            result.textContent = `Falsch! Die richtige Antwort war: ${searchedLocation}`;
-            result.style.color = "red";
-        }
             // const url = `correct.html?selected=${encodeURIComponent(selectedLocation)}&correct=${encodeURIComponent(searchedLocation )}&timestamp=${encodeURIComponent(searchedTimestamp)}`;
             sessionStorage.setItem('selected', selectedLocation);
             sessionStorage.setItem('correct', searchedLocation);
@@ -61,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         guessButton.disabled = true;
-        guessButton.classList.remove("enabled");  
+        guessButton.classList.remove("enabled"); 
         
 });
 
