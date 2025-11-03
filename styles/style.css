@@ -279,7 +279,7 @@ ol {
     cursor: not-allowed; 
     font-size: 1em;
     box-shadow: 0 3px 0 #7b5e47; 
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
     text-decoration: none; 
     display: inline-block; 
@@ -344,7 +344,8 @@ ol {
     cursor: pointer;
     font-size: 1em;
     box-shadow: 0 3px 0 #7b5e47; 
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     text-decoration: none; 
     display: inline-block; 
     text-align: center;
