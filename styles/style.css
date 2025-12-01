@@ -1,6 +1,7 @@
 body {
     background-color: #E9D8C8; 
-    display: block;
+    display: flex;
+    flex-direction: column;
     overflow: auto;
     justify-content: center;
     align-items: center;
@@ -15,12 +16,14 @@ body {
     background-color: #93BFB7; 
     color: black; 
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
     width: 100%;
     box-sizing: border-box;  
     padding: 20px 30px;
     display: flex;
-    justify-content: center; 
+    justify-content: space-between ; 
     text-align: center;
+    align-items: center;
 
     position: fixed;
     top: 0;
@@ -43,6 +46,7 @@ body {
     margin: 0; 
     flex-grow: 1;
     text-align: center; 
+    flex: 1;
 }
 
 .quit-button {
@@ -62,22 +66,31 @@ body {
     background-color: #a88d75;
 }
 
-.Pergament{
-    background-image: url('../image/Pergament.png');
-    background-size: 100% 100%; 
+.Pergament {
+    position: relative;
+    width: 90%;
+    max-width: 650px;
+
+    background-image: url('../image/Pergament.svg');
+    background-size: contain; 
     background-repeat: no-repeat;
     background-position: center;
 
-    width: 750px;
-    min-height: 800px; 
-    padding: 300px 150px 150px 230px; 
-    box-sizing: border-box; 
-    margin-left: auto;
-    margin-right: auto; 
-    margin-top: 20px;
-
+    padding: 300px 150px 150px 230px;
+    /* margin-top: 140px; */
     text-align: center;
     line-height: 1.6;
+    box-sizing: border-box; 
+}
+
+.Pergament h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.Pergament p,
+.Pergament ol {
+    font-size: 1.1rem;
 }
 
 .clues {
@@ -377,8 +390,69 @@ ol {
 }
 
 @media (max-width: 768px) {
-  .chart-container {
-    width: 90%;
-    padding: 10px;
-  }
+    .chart-container {
+        padding: 200px 100px 100px 200px;
+        width: 90%;
+        padding: 10px;
+    }
+
+    .Pergament h2 {
+        font-size: 1.3rem;
+        
+    }
+
+    .Pergament p,
+    .Pergament ol {
+        font-size: 0.95rem;
+    }
+
+    .start-button {
+        font-size: 0.95rem;
+        padding: 8px 18px;
+    }
+}
+
+@media (max-width: 675px) {
+
+    .Pergament {
+        max-width: 750px;
+        height: 800px;
+        padding: 200px 100px 100px 150px;
+        background-size: 95%;
+        background-position: top;
+        margin-top: 100px;
+        text-align: top;
+    }
+
+    .Pergament h2 {
+        font-size: 3vw; 
+        margin-bottom: 10px;
+    }
+
+    .Pergament p,
+    .Pergament ol {
+        font-size: 2vw;
+        line-height: 1.45;
+    }
+
+    .start-button {
+        font-size: 2.3vw;
+        padding: 1.5vw 2vw;
+    }
+}
+
+@media (max-width: 555px) {
+
+    .Pergament {
+        max-width: 750px;
+        height: 800px;
+        padding: 170px 60px 50px 120px;
+        background-size: 95%;
+    }
+
+    .Pergament p,
+    .Pergament ol {
+        font-size: 2vw;
+        line-height: 1;
+    }
 }
